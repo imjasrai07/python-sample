@@ -26,7 +26,7 @@ mycol = mydb["content"]
 
 def status(id):
 
-   mycol.update_one({'_id':id},{'$set' : {'status':0}})
+   mycol.update_one({'_id':id},{'$set' : {'status':1}})
 
 def postr(x,n):
 
@@ -58,7 +58,7 @@ def postr(x,n):
 
   wp.call(NewPost(post))
 
-  status(id)
+  
 
   print(n)
 
@@ -72,7 +72,7 @@ i=1
 
 for x in y:
 
-  #postr(x,i)
+  postr(x,i)
 
   id=x['_id']
 
