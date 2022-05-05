@@ -8,13 +8,13 @@ from wordpress_xmlrpc.methods.posts import GetPosts, NewPost
 
 from wordpress_xmlrpc.methods.users import GetUserInfo
 
-dblink=os.environ['dblk']
+dblink=os.environ['DBLK']
 
-username=os.environ['unlk']
+username=os.environ['UNLK']
 
-password= os.environ['pwlk']
+password= os.environ['PWLK']
 
-weblink=os.environ['ulk']
+weblink=os.environ['ULK']
 
 wp = Client(weblink, username, password)
 
