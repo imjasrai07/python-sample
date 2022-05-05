@@ -7,6 +7,7 @@ from wordpress_xmlrpc import Client, WordPressPost
 from wordpress_xmlrpc.methods.posts import GetPosts, NewPost
 
 from wordpress_xmlrpc.methods.users import GetUserInfo
+from wordpress_xmlrpc.methods import taxonomies
 
 dblink=os.environ['DBLK']
 
@@ -48,7 +49,7 @@ def postr(x,n):
 
   category=x['category']
 
-  post.terms_names ==   { 
+  post.terms_names = { 
 
   'category' [category]}
 
