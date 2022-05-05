@@ -51,7 +51,7 @@ def postr(x,n):
 
   post.terms_names = { 
 
-  'category' [category]}
+  'category' : [category]}
 
   post.slug=rt
 
