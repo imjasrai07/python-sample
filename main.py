@@ -35,5 +35,5 @@ for x in ls:
         'subcategory':ghg
     }
     cc.insert_one(dict)
-    print(inserted)
+    print(inserted_id)
     i+=1
