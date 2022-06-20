@@ -2,7 +2,7 @@ import requests
 import html5lib
 from bs4 import BeautifulSoup
 import pymongo
-srv='mongodb+srv://rjsingh:rr99&&qqww@cluster0.cnmoe.mongodb.net/'
+srv=
 client=pymongo.MongoClient('srv')
 db=client['ezineart']
 cc=db['categories']
